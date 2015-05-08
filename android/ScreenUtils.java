@@ -26,13 +26,16 @@ public class ScreenUtils
      * @param context 
      * @return 
      */ 
-    public static int getScreenWidth(Context context)  
+    public static int getScreenWidth()  
     {  
-        WindowManager wm = (WindowManager) context  
-                .getSystemService(Context.WINDOW_SERVICE);  
-        DisplayMetrics outMetrics = new DisplayMetrics();  
-        wm.getDefaultDisplay().getMetrics(outMetrics);  
-        return outMetrics.widthPixels;  
+     //   WindowManager wm = (WindowManager) context  
+     //           .getSystemService(Context.WINDOW_SERVICE);  
+     //   DisplayMetrics outMetrics = new DisplayMetrics();  
+     //   wm.getDefaultDisplay().getMetrics(outMetrics);  
+		DisplayMetrics displayMetrics = Resources.getSystem()
+		.getDisplayMetrics();
+		//return outMetrics.widthPixels;
+        return displayMetrics.widthPixels;  
     }  
  
     /** 
@@ -41,13 +44,16 @@ public class ScreenUtils
      * @param context 
      * @return 
      */ 
-    public static int getScreenHeight(Context context)  
+    public static int getScreenHeight()  
     {  
-        WindowManager wm = (WindowManager) context  
-                .getSystemService(Context.WINDOW_SERVICE);  
-        DisplayMetrics outMetrics = new DisplayMetrics();  
-        wm.getDefaultDisplay().getMetrics(outMetrics);  
-        return outMetrics.heightPixels;  
+    //    WindowManager wm = (WindowManager) context  
+    //            .getSystemService(Context.WINDOW_SERVICE);  
+    //    DisplayMetrics outMetrics = new DisplayMetrics();  
+    //    wm.getDefaultDisplay().getMetrics(outMetrics);  
+		DisplayMetrics displayMetrics = Resources.getSystem()
+			.getDisplayMetrics();
+		return displayMetrics.heightPixels;
+     //   return outMetrics.heightPixels;  
     }  
  
     /** 
