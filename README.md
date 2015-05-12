@@ -14,6 +14,7 @@ Useful utils in projects
 - `L.java`:控制台log封装
 - `MyToast.java`:toast封装
 - `SPUtil.java`:SharePreference类封装
+update date:2015年5月12日09:19:00
 - `FastBlur.java`:将Bitmap图片绘制毛玻璃效果
 
 > 以上来源于网络
