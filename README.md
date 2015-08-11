@@ -1,4 +1,4 @@
-# MyUtils
+﻿# MyUtils
 Useful utils in projects
 
 ##Android Utils
@@ -16,5 +16,5 @@ Useful utils in projects
 - `SPUtil.java`:SharePreference类封装
 update date:2015年5月12日09:19:00
 - `FastBlur.java`:将Bitmap图片绘制毛玻璃效果
-
+- `MyViewHolder.java`和`MyAdapter.java`:对通用的listView adapter和viewHolder进行了封装
 > 以上来源于网络
